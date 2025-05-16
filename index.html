@@ -3,141 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arav's Portfolio</title>
+  <title>Arav Bhatt</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #222;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f7f7;
+      color: #333;
     }
-
-    header, footer {
-      background-color: #f4f4f4;
+    header {
+      background-color: #20232a;
+      color: #f9f9f9;
+      padding: 1rem;
       text-align: center;
-      padding: 1rem 0;
-      font-weight: bold;
-      border-bottom: 1px solid #ddd;
     }
-
-    footer {
-      border-top: 1px solid #ddd;
-      border-bottom: none;
+    h1 {
+      margin: 0;
     }
-
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       padding: 2rem;
     }
-
-    h1, h2 {
-      color: #111;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.3rem;
-    }
-
-    h3 {
-      margin-bottom: 0.2rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    img {
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ff7f50;
       display: block;
       margin: 1.5rem auto;
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
     }
-
-    .section {
-      margin-top: 2rem;
+    section {
+      margin-top: 2.5rem;
     }
-
+    h2 {
+      color: #ff7f50;
+      border-bottom: 2px solid #ff7f50;
+      padding-bottom: 0.4rem;
+    }
     a {
-      color: #0366d6;
+      color: #0077cc;
       text-decoration: none;
     }
-
-    a:hover {
-      text-decoration: underline;
+    h3 {
+      color: #444;
+      margin-top: 2rem;
+    }
+    .edu-entry {
+      margin-bottom: 1.5rem;
+    }
+    .edu-entry h3 {
+      margin: 0 0 0.3rem 0;
+      font-size: 1.1rem;
+    }
+    .edu-entry p {
+      margin: 0.2rem 0;
+      color: #666;
+    }
+    ul.project-list {
+      padding-left: 1.2rem;
+    }
+    ul.project-list li {
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <header>
-    Arav Bhatt's Portfolio
+    <h1>Arav Bhatt</h1>
+    <p>Passionate about technology, backend systems, and applied AI. I’ve built cloud-native tools, automated pipelines, and data-backed apps that reflect my interest in building secure, scalable systems that solve real-world problems.</p>
   </header>
 
   <div class="container">
-    <img src="1743615482554.jpeg" alt="Arav Bhatt" />
+    <img src="1743615482554.jpeg" alt="Arav Bhatt" class="profile-img" />
 
-    <section class="section">
+    <section>
       <h2>About Me</h2>
-      <p>
-        I am a Computer and Information Science major with hands-on experience in backend APIs, cloud infrastructure automation, and data-driven systems. I'm especially interested in agentic AI and how it’s implemented to solve real-world problems.
-        I’ve built real-time tools, automated pipelines, and deployed ML models at scale. Outside of tech, I’m a huge fan of the Bengals, Reds, Cavaliers, and Buckeyes — and I bring that same energy to my work.
-      </p>
+      <p>I got into coding in high school, but things really started to click in my second year of college — especially when I began building real tools. Recently, I developed an NBA game predictor powered by regression models and real-time stats.</p>
+      <p>I’m especially interested in the future of AI — particularly agentic AI — and not just how it works, but how it’s actually being implemented to reshape the world. I’m excited by roles that bridge AI and software engineering to build systems that make an impact.</p>
+      <p>Outside of tech, I’m a huge fan of the Bengals, Reds, Cavaliers, and Buckeyes. I bring that same competitive spirit to everything I work on.</p>
     </section>
 
-    <section class="section">
+    <section>
       <h2>Education</h2>
-      <p><strong>Fisher College of Business – Ohio State</strong><br>Specialized Master in Business Analytics (SMB-A), 2025 – 2026</p>
-      <p><strong>The Ohio State University</strong><br>Bachelor of Arts in Computer and Information Science, 2021 – 2025</p>
-      <p><strong>William Mason High School</strong><br>High School Diploma, 2017 – 2021</p>
+      <div class="edu-entry">
+        <h3>The Ohio State University – Fisher College of Business</h3>
+        <p>Specialized Master in Business Analytics (SMB-A)</p>
+        <p>August 2025 – 2026</p>
+      </div>
+      <div class="edu-entry">
+        <h3>The Ohio State University</h3>
+        <p>B.A. in Computer and Information Science</p>
+        <p>August 2021 – 2025</p>
+      </div>
+      <div class="edu-entry">
+        <h3>William Mason High School</h3>
+        <p>High School Diploma</p>
+        <p>August 2017 – 2021</p>
+      </div>
     </section>
 
-    <section class="section">
+    <section>
       <h2>Projects</h2>
+      <ul class="project-list">
+        <li><strong>NBA Game Predictor | Python, Pandas</strong><br>
+        Built a CLI-based NBA prediction tool that uses logistic regression and live team statistics from the NBA API.<br>
+        Mapped NBA team names and fetched matchup data to generate daily predictions for upcoming games.<br>
+        Engineered a feature set from team performance to inform win predictions, with design for API and model upgrades.</li>
 
-      <p><strong>NBA Game Predictor | Python, Pandas</strong></p>
-      <ul>
-        <li>Built a CLI-based NBA prediction tool that uses logistic regression and live team statistics from the NBA API.</li>
-        <li>Mapped NBA team names and fetched matchup data to generate daily predictions for upcoming games.</li>
-        <li>Engineered a feature set from team performance to inform win predictions, with design for API and model upgrades.</li>
-      </ul>
+        <li><strong>Sentiment Analyzer | Python, TextBlob</strong><br>
+        Developed a sentiment analysis CLI tool using TextBlob to classify user input as positive, negative, or neutral.<br>
+        Implemented a real-time text input loop with polarity scoring and visual bar chart to represent sentiment magnitude.<br>
+        Designed the tool as a lightweight demo of NLP sentiment pipelines for basic sentiment classification.</li>
 
-      <p><strong>Sentiment Analyzer | Python, TextBlob</strong></p>
-      <ul>
-        <li>Developed a sentiment analysis CLI tool using TextBlob to classify user input as positive, negative, or neutral.</li>
-        <li>Implemented a real-time text input loop with polarity scoring and visual bar chart to represent sentiment magnitude.</li>
-        <li>Designed the tool as a lightweight demo of NLP sentiment pipelines for basic sentiment classification.</li>
-      </ul>
+        <li><strong>COVID-19 ChatBot | BotsAI</strong><br>
+        Developed a chatbot that provided COVID-19 guidance based on user-reported symptoms.<br>
+        Built to simulate real-world AI assistant logic; explored NLP design patterns and user response prediction.<br>
+        Focused on delivering clear, helpful, and accurate information in real-time conversations.</li>
 
-      <p><strong>COVID-19 ChatBot | BotsAI</strong></p>
-      <ul>
-        <li>Developed a chatbot that provided COVID-19 guidance based on user-reported symptoms.</li>
-        <li>Applied basic natural language processing to enable clear and helpful responses.</li>
-        <li>Focused on delivering clear, helpful, and accurate information in real-time conversations.</li>
-      </ul>
-
-      <p><strong>School Calendar Alexa Voice Skill | Amazon Alexa SDK</strong></p>
-      <ul>
-        <li>Created an Alexa voice skill that shared school calendar events through voice commands.</li>
-        <li>Enabled hands-free access to schedule information using voice interaction.</li>
-        <li>Designed intuitive user prompts and responses to ensure natural dialogue.</li>
+        <li><strong>School Calendar Alexa Voice Skill | Amazon Alexa SDK</strong><br>
+        Created an Alexa voice skill that shared school calendar events through voice commands.<br>
+        Enabled hands-free access to schedule information using voice interaction.<br>
+        Designed intuitive user prompts and responses to ensure natural dialogue.</li>
       </ul>
     </section>
 
-    <section class="section">
+    <section>
       <h2>Links</h2>
-      <ul>
+      <ul class="project-list">
         <li><a href="https://github.com/aravbhatt" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/arav-bhatt" target="_blank">LinkedIn</a></li>
-        <li><a href="Arav Bhatt_Resume.pdf" target="_blank">Resume (PDF)</a></li>
-        <li>Email: <a href="mailto:arav.bhatt@gmail.com">arav.bhatt@gmail.com</a></li>
+        <li><a href="https://linkedin.com/in/arav-bhatt" target="_blank">LinkedIn</a></li>
+        <li><a href="Arav%20Bhatt_Resume.pdf" target="_blank">Resume (PDF)</a></li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:arav.bhatt@gmail.com">arav.bhatt@gmail.com</a></p>
     </section>
   </div>
 
   <footer>
-    © 2025 Arav Bhatt
+    <p>&copy; 2025 Arav Bhatt</p>
   </footer>
 </body>
 </html>
